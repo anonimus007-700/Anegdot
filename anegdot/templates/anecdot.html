@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Гуморески{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/gumoresk.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.png" %}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1000);
+           });
+       });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">До головної</a>
+        <div class="dropdown">
+          <button class="dropbtn">Анегдоти</button>
+          <div class="dropdown-content">
+            {% block asides %}
+            {% endblock %}
+          </div>
+        </div> 
+      </div>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+</body>
+</html>

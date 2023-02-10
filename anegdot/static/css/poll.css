@@ -1,0 +1,173 @@
+body {
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    color: #ffffff;
+}
+
+.all {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    bottom: 10px;
+}
+
+.anecdot-input {
+    width: 50%;
+}
+
+.anecdot-input textarea{
+    width: 45%;
+    margin-bottom: -10px;
+}
+.anecdot-input .text-name_input {
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #00000034;
+    width: 46%;
+}
+
+.proposition {
+    width: 50%;
+}
+
+.proposition textarea{
+    width: 45%;
+    margin-bottom: -10px;
+}
+textarea {
+    width: 20%;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 4px 4px 10px #00000034;
+    height: 150px;
+}
+.btn {
+    float: left;
+    color: #ffffff;
+    background-color: #36a2eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 14px;
+    width: 150px;
+    transition: box-shadow 200ms ease-out;
+    margin: 7px;
+    border-radius: 8px;
+}
+.btnsub {
+    float: left;
+    color: #ffffff;
+    background-color: #36a2eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 14px;
+    width: 150px;
+    transition: box-shadow 200ms ease-out;
+    margin: 7px;
+    border-radius: 8px;
+}
+.chec {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 150px;
+    margin: 7px;
+    color: #ffffff;
+    background-color: #1ed41e;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+}
+.back {
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    height: 50px;
+    font-weight: 600;
+    padding: 4px;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.back:hover {
+    color: #fff;
+}
+
+.back .backspan {
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+  
+.back:hover .backspan {
+    background: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .all {
+        flex-direction: column;
+    }
+    .proposition {
+        width: 100%;
+    }
+    .proposition textarea{
+        width: 88%;
+    }
+
+    .anecdot-input {
+        width: 88%;
+        margin-bottom: 10px;
+    }
+    .anecdot-input textarea{
+        width: 100%;
+    }
+    .anecdot-input .text-name_input {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

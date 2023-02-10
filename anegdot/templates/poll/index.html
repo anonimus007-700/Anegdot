@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Опитування</title>
+    <link rel="stylesheet" href="{% static "css/poll.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.png" %}">
+    <script src="https://kit.fontawesome.com/cc2036501e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="/" class="back"><span class="backspan">До головної</span></a>
+    
+    <div class="all">
+        <div class="anecdot-input">
+            <form method="post">
+                {% csrf_token %}
+                {{ push.anecdot_title }}<br>
+                {{ push.anecdot_text }}
+                <p><button class="btn" type="submit">Підтвердити</button>
+            </form>
+        </div>
+
+        <div class="proposition">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.offer_text }}
+                <p><button class="btnsub" type="submit">Надіслати</button>
+            </form>
+            <a class="chec" href="{% url 'poll:offers' %}">Глянути що пропонують інші</a>
+        </div>
+    </div>
+</body>
+</html>

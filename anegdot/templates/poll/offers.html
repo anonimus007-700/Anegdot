@@ -1,0 +1,13 @@
+{% extends 'offer_base.html' %}
+
+{% block title %}Опитування{% endblock %}
+
+{% block main %}
+    {% if offers_list %}
+        {% for a in offers_list %}
+            <p>{{a.offer_text}}</p>
+        {% endfor %}
+    {% else %}
+        <p>Не знайдено запитань</p>
+    {% endif %}
+{% endblock %}

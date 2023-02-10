@@ -1,0 +1,23 @@
+{% extends 'anecdot.html' %}
+
+{% block title %}Гуморески{% endblock %}
+
+{% block main %}
+    {% if anecdot_list %}
+        {% for a in anecdot_list %}
+            <div id="{{a.id}}">
+                <h1><b>{{a.anecdot_title}}</b></h1>
+                <p>{{a.anecdot_text}}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Не знайдено гуморесок</p>
+    {% endif %}
+{% endblock %}
+{% block asides %}
+    {% if anecdot_list %}
+        {% for a in anecdot_list %}
+            <p><a href="#{{a.id}}">{{a.anecdot_title}}</a></p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

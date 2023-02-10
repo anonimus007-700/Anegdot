@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Головна</title>
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.png" %}">
+    <script src="https://kit.fontawesome.com/cc2036501e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://t.me/gumoresk_ua" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://github.com/anonimus007-700" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+    <div class="line"></div>
+    <main>
+        <a href="{% url 'anecdote:reading' %}" class="bn1">Читати гуморески</a>
+        <a href="{% url 'poll:poll' %}" class="bn2">Додати гумореску або відгук</a>
+    </main>
+</body>
+</html>

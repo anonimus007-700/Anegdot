@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Гуморески{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/gumoresk.css" %}">
+    <link rel="shortcut icon" type="image/png" href="{% static "images/favicon.png" %}">
+</head>
+<body>
+    <a href="/" class="back"><span class="backspan">До головної</span></a>
+    <div class='offer'>
+        {% block main %}
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+body {
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+main {
+  font-family: 'Times New Roman', Times, serif;
+  color: #cacaca;
+  text-align: center;
+  margin-left: 23%;
+  margin-right: 23%;
+  border: 6px solid #000;
+  border-radius: 35px;
+  background: linear-gradient(rgba(4,0,52,1), rgba(43,42,70,1), rgba(14,18,96,1));
+}
+main h1 {
+  margin-bottom: -20px;
+  font-size: 3em;
+  word-break: break-all;
+}
+main P {
+  line-height: 0.9em;
+  font-size: 1.7em;
+  word-wrap: break-word;
+}
+
+.back {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  font-weight: 600;
+  padding: 4px;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 1.4em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.back:hover {
+  color: #fff;
+}
+
+.back .backspan {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.back:hover .backspan {
+  background: transparent;
+}
+
+.offer {
+  font-family: 'Times New Roman', Times, serif;
+  color: #cacaca;
+  text-align: center;
+  margin-left: 23%;
+  margin-right: 23%;
+  border: 6px solid #000;
+  border-radius: 35px;
+  line-height: 2.3em;
+  font-size: 0.8em;
+  background: linear-gradient(rgba(4,0,52,1), rgba(43,42,70,1), rgba(14,18,96,1));
+}
+.offer P {
+  font-size: 3em;
+}
+
+.navbar {
+/*    position: fixed; */
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 8px;
+    border-radius: 30px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    .offer {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
