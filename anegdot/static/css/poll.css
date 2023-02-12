@@ -16,8 +16,7 @@ body {
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    left: 15px;
-    bottom: 10px;
+    
 }
 
 .anecdot-input {
@@ -145,6 +144,8 @@ textarea {
 @media only screen and (max-width: 768px) {
     .all {
         flex-direction: column;
+        top: 0;
+        margin-top: 70px;
     }
     .proposition {
         width: 100%;
